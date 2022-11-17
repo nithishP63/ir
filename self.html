@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CarRent</title>
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="register.css">
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      .container{
+        margin-top: -430px;
+        margin-left: 320px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="icon"><img src="icon.jpg">
+      <div class="text">CarRent</div></div>
+      <nav class="navigation">
+        <div class="links"><a href="http://127.0.0.1:5500/login.html">Home</a></div>
+        <div class="links"><a href="http://127.0.0.1:5500/about.html">About</a></div>
+        <div class="links"><a href="http://127.0.0.1:5500/contact.html">Contact</a></div>
+      </nav>
+    </header>
+    <div class="background">
+      <img src="th.jpg">
+      <main class="container">
+          <table>
+            <tr>
+              <td colspan="2" align="center"><h2>Fill Your Driving license details</h2></td>
+            </tr>
+            <tr>
+              <th align="right">Driving License Number : </th>
+              <th align="left"><input type="text" id="num"></th>
+            </tr>
+            <tr>
+              <th align="right">Name in driving license: </th>
+              <th align="left"><input type="text" id="name"></th>
+            </tr>
+            <tr>
+              <th align="right">Date of Birth : </th>
+              <th align="left"><input type="date" id="age"></th>
+            </tr>
+            <tr>
+              <th align="right">Validity : </th>
+              <th align="left"><input type="date" id="mail"></th>
+            </tr>
+            <tr>
+              <th align="right">Upload License : </th>
+              <th align="left"><input type="file" id="lic"></th>
+            </tr>
+            <tr>
+              <th colspan="2" align="center"> <div><button class = "button" onclick="check()">update</button></div></th>
+            </tr>
+          </table>
+      </main>
+    </div>
+
+    
+    <script>
+     
+      function check(){
+        let un = document.getElementById("name").value;
+        let a = document.getElementById("age").value;
+        let n = document.getElementById("num").value;
+        let em = document.getElementById("mail").value;
+        let l = document.getElementById("lic").value;
+
+        if(n == ""){
+          alert("Driving License Number must be filled");
+        }
+        else if(un == ""){
+          alert("Name must be filled out");
+        }
+        else if(a == ""){
+          alert("Date of birth must be filled out");
+        }
+        else if(em == ""){
+          alert("validity must be filled out");
+        }
+        else if(lic.files.length == 0){
+          alert("Upload your license");
+        }
+        else{
+          window.location.href = "http://127.0.0.1:5500/thank.html";
+        }
+        
+      }
+      
+    </script>
+  </body>
+</html>

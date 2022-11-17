@@ -1,0 +1,217 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #474242;
+  margin: 0;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: space-between;
+  background-image: linear-gradient(to right,#080808bc,#161617d1);
+  align-items:center;
+  border-bottom: 2px solid rgb(176, 250, 16);
+  color: white;
+}
+
+.icon{
+  margin-left: 540px;
+  display: flex;
+  width:700px;
+  align-items: center;
+}
+.icon img{
+  margin-left: 50px;
+  width:35px;
+  border-radius: 50%;
+  margin: 0px 10px;
+}
+.txt{
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(-45deg, rgba(209, 254, 6, 0.92), rgba(72, 90, 3, 0.788),
+   rgba(209, 234, 43, 0.847));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navigation{
+  width:1000;
+  display: flex;
+}
+.navigation a{
+  margin-right: 20px;
+ color: white;
+ text-decoration: none;
+ text-transform: uppercase;
+ transition: 0.7s;
+}
+
+.navigation a:hover{
+  color: rgba(209, 254, 6, 0.92);
+}
+
+.background{
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+.background img{
+  width: 100%;
+}
+.text{
+  width: 100%;
+  margin-top: -700px;
+  position: absolute;
+  margin-bottom: 15px;
+  padding: 15px;
+  margin-left: 100px;
+ 
+}
+.text h1{
+  font-size: 48px;
+  padding-left: 250px;
+  color: rgb(255, 115, 0);
+}
+.text p{
+  font-size: 34px;
+  font-weight: 700;
+  font-style: oblique;
+  padding-left: 280px;
+  margin-top: -20px;
+  color: rgb(251, 8, 8);
+}
+.container{
+  box-sizing: content-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px 250px;
+  border-radius: 10px;
+  padding: 10px 0;
+  position: absolute;
+  margin-top: -490px;
+  border: 2px solid whitesmoke;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0.1));
+  backdrop-filter: blur(21px);
+  -webkit-backdrop-filter: blur(21px);
+  box-shadow: 0 8px 32px rgba(245, 245, 245, 0.741);
+  margin-left: 300px;
+}
+.first-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.first-row div{
+  box-sizing: content-box;
+  margin: 10px;
+  padding: 15px 10px;
+  color: gold;
+  font-weight: 900;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background-color: rgb(66, 59, 59);
+  width: 30%;
+  text-align: center;
+}
+.second-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.second-row div{
+  box-sizing: content-box;
+  margin: 10px;
+  padding: 15px 10px;
+  color: gold;
+  font-weight: 900;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background-color: rgb(66, 59, 59);
+  width: 25%;
+  text-align: center;
+}
+.third-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.button{
+  background-color: gold;
+  border: 3px solid rgb(3, 3, 3);
+  color: rgba(3, 3, 3);
+  border-radius: 26px;
+  height: 50px;
+  width: 110px;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  padding: 6px;
+  margin-bottom: -1000px;
+  text-decoration: none;
+  font-weight: 900;
+}
+.button:hover{
+  box-shadow: 5px 5px 10px rgba(20, 16, 11, 0.749);
+}
+
+.button:active{
+  opacity:0.6;
+}
+#driver{
+  margin: 20px 0px;
+  margin-left: 150px;
+}
+#ck{
+  color: red;
+ font-size: 18px;
+ font-weight: 600;
+}
+
+.fourth-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.fourth-row div{
+  box-sizing: content-box;
+  margin: 10px;
+  padding: 15px 10px;
+  color: gold;
+  font-weight: 900;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background-color: rgb(66, 59, 59);
+  width: 35%;
+  text-align: center;
+}
+
+.fifth-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.fifth-row div{
+  box-sizing: content-box;
+  margin: 10px;
+  padding: 15px 10px;
+  color: gold;
+  font-weight: 900;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background-color: rgb(66, 59, 59);
+  width: 25%;
+  text-align: center;
+}

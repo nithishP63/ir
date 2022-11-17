@@ -1,0 +1,101 @@
+<?php
+$fname=$_POST['fname'];
+$lname=$_POST['lname'];
+$age=$_POST['age'];
+$mob=$_POST['mobile'];
+$gender=$_POST['gen'];
+$email=$_POST['mail'];
+$pw=$_POST['pwd'];
+$cpw=$_POST['cpwd'];
+
+  $conn = new mysqli('localhost','root','','railway');
+  if($conn->connect_error){
+	echo "<script type='text/javascript'>alert('Database failed');</script>";
+  }
+  else{
+    $sql = "INSERT INTO passengers (p_fname, p_lname, p_age, p_contact, p_gender, email, password) VALUES ('$fname', '$lname', '$age', '$mob', '$gender', '$email', '$pw');";
+    if(mysqli_query($conn, $sql))
+    {  
+      $message = "You have been successfully registered";
+      header('location: http//localhost/cloud/log.php');
+      exit();
+    }
+    else
+    {  
+      $message = "Could not insert record"; 
+    }
+      echo "<script type='text/javascript'>alert('$message');</script>";
+  }
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CarRent</title>
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="register.css">
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      .container{
+        margin-top: -400px;
+        margin-left: 350px;
+      }
+      #ruk{
+        width: 100px;
+        opacity: 1;
+        border-radius: 10px;
+      }
+      td{
+        color: white;
+      }
+      button{
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="icon"><img src="icon.jpg">
+      <div class="text">CarRent</div></div>
+      <nav class="navigation">
+        <div class="links"><a href="http://127.0.0.1:5500/login.html">Home</a></div>
+        <div class="links"><a href="http://127.0.0.1:5500/about.html">About</a></div>
+        <div class="links"><a href="http://127.0.0.1:5500/contact.html">Contact</a></div>
+      </nav>
+    </header>
+    <div class="background">
+      <img src="th.jpg">
+      <main class="container">
+          <table>
+            <tr>
+              <td align="left"><h2>Your Driver Details: &emsp;</h2></td>
+              <td align="center"><img src="r.jpg" alt="rukesh" id="ruk"></td>
+            </tr>
+            <tr>
+              <th align="right">Driving License Number : &emsp;</th>
+              <td align="left">TN23 20130003891</td>
+            </tr>
+            <tr>
+              <th align="right">Name : &emsp;</th>
+              <td align="left">Rukesh Kumar V</td>
+            </tr>
+            <tr>
+              <th align="right">Contact No. : &emsp;</th>
+              <td align="left">9751764817</td>
+            </tr>
+            <tr>
+              <th colspan="2" align="center"> <div><button class = "button" onclick="check()">Ok</button></div></th>
+            </tr>
+          </table>
+      </main>
+    </div>
+
+    <script>
+      function check(){
+        window.location.href = "http://127.0.0.1:5500/thank.html";  
+      }
+    </script>
+  </body>
+</html>
