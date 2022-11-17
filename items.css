@@ -66,9 +66,9 @@ body{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(2,1fr);
-  grid-gap: 80px;
+  grid-gap: 60px;
   margin: 50px 50px;
-  margin-top: -700px;
+  margin-top: -660px;
 }
 .container{
   display: flex;
