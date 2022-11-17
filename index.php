@@ -42,7 +42,7 @@
         </div>
         <div class="third-row">
           <label>Password : </label>
-          <input type="password" id="pwd" name="password" >
+          <input type="password" id="pwd" name="password" placeholder="Enter your Password">
       </div>
         <div class="fourth-row">
           <div><a href="reg.php" ><button class = "button" id="bt2">New User</button></a></div>
