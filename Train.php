@@ -7,6 +7,16 @@
     <meta charset="utf-8">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .shop-list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: 60px;
+        margin: 50px 50px;
+        margin-top: -660px;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
