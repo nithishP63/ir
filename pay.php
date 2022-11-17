@@ -19,7 +19,7 @@
       </nav>
     </header>
     <div class="background">
-      <img src="bg2.jpg">
+      <img src="bg4.jpg">
     <section class="payment">
       <div class="bill">
         <table>
