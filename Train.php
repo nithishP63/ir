@@ -19,7 +19,7 @@
       </nav>
     </header>
     <div class="background">
-      <img src="bg2.jpg">
+      <img src="th1.jpg">
     <section class="shop-list">
       <div class="container">
         <div><img src="th2.jpg"></div>
