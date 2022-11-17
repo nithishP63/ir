@@ -116,7 +116,7 @@
         }
         else{
           localStorage.setItem("num",no);
-          window.location.href = "train.php";
+          window.location.href = "Train.php";
         }
       }
     </script>
